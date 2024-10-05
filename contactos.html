@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="contactos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"><img src="img/coca-cola.png" alt=""></h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">&#8801</label>
+
+        <nav class="menu">
+            <a href="index.html" >Inicio</a>
+            <a href="https://elpais.com/noticias/coca-cola/" target="_blank">Noticias</a>
+            <a href="productos.html" >Productos</a>
+            <a href="contactos.html" >Contactos</a>
+            <label for="check" class="ocultar-menu">&#215</label>
+        </nav>
+    </header>
+
+    <div>
+    <h2>CONTACTO</h2>
+    <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="asunto">Asunto:</label><br>
+        <input type="text" id="asunto" name="asunto" required><br><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar"> 
+    </form>
+    </div>
+    <div>
+
+    <form name="formulario" >
+        <label for="listado">¿CUAL ES TU BEBIDA FAVORITA?</label>
+        <select name="bebidas" id="listado">
+            <option value="1">Coca-Cola</option>
+            <option value="2">powerade</option>
+            <option value="3">Sprite</option>
+            <option value="4">Fanta</option>
+            <option value="4">dasani</option>
+            <option value="4">Del valle</option>
+        </select>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    </div>
+</body>
+
+<footer>
+    <div class="contenedor-footer">
+        <div class="direccion">
+            <h4>DIRECCION</h4>
+            <p>Coca'Cola Planta Lindey</p>
+            <p>Arequipa 111</p>
+            <p>Tiabaya 04013</p>
+            <p>Perú</p>
+        </div>
+    
+        <div class="red-social">
+            <h4>REDES SOCIALES</h4>
+            <ul class="enlaces">
+                <li><a href="https://www.facebook.com/CocaCola" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com/CocaCola" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/CocaCola" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/CocaCola" target="_blank"><i class="bi bi-linkedin"></i></a></li> 
+                <li><a href="#" target="_blank"><i class="bi bi-geo-alt-fill"></i></a></li>           
+            </ul>
+        </div>
+
+        <div class="company">
+            <img src="img/coca-cola.png" alt="logo">
+            <p class="company">© 2024 The Coca~Cola Company |
+                 Reservados todos los derechos |
+                  Desarrollado por <span>esc0rp</span></p>
+    
+        </div>
+    </div>
+
+</footer>
+</html>
